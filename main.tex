@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{geometry}
+\DeclareSIUnit\bar{bar}
+\DeclareSIUnit\btu{BTU}
+\DeclareSIUnit\lbmol{lbmol}
+\DeclareSIUnit\rankine{R}
+\DeclareSIUnit\feet{feet}
+\DeclareSIUnit\poundForce{lb\textsubscript{f}}
+
+\geometry{left=0.25in, top=0.25in}
+
+
+\begin{document}
+\begin{center}
+    \large\textsc{Thermodynamics Cheat Sheet} 
+\end{center}
+
+\begin{multicols}{2}
+\[\Delta P = \rho gh\]
+\[P \nu = R T\]
+\[PV=mRT\]
+\[P_v = \phi P_{\text{sat@T}}  \]
+\[ T_R = T / T_{cr} \]
+\[P_R = P/P_{cr}  \]
+\[ P \nu = ZRT \]
+\[ R=R_u / M \]
+\[ \dot{W} = VI=I^2 R \]
+\[ w=\int P \;dv \]
+\[ W= m \int P \;dv \]
+\[ dh=c_p \; dT \]
+\[ \sum_{inlets} \dot{m}_i - \sum_{outlets} \dot{m}_o = \dv{m_{cv}}{t} \]
+\[ v_x = v_f + x \left(v_g - v_f \right) \]
+\[ u_x = u_f + x \left(u_g - u_f \right) \]
+\[ h_x = h_f + x \left(h_g - h_f \right) \]
+\[W=\int \bar{F} \cdot ds \]
+\(F=kx  \) linear spring
+\[ SG=\rho / \rho_{\text{H}_2 O} \]
+\[ du= c_v \;dT \]
+\[ h=u+ P\nu \]
+\[ x=\frac{m_{\text{vapor}}}{m_{\text{liquid}}+m_{\text{vapor}}} \]
+\[\Delta \text{KE} = \frac{1}{2}  m \left( {V_2}^2 -{V_1}^2  \right)  \]
+\[\Delta \text{PE} =   mg \left( {z_2} -{z_1}  \right)  \]
+\[ c_p = c_v + R \]
+\[ \dot{Q} - \dot{W} + \sum_{inlets} \dot{m}_i \left( h_i + \frac{{V_i}^2}{2}+gz_i \right)  - \sum_{outlets} \dot{m}_o \left( h_o + \frac{{V_o}^2}{2}+gz_o \right) = \dv{E}{t} \]
+\[ q-w=\Delta u + \Delta\text{ke} + \Delta\text{pe} \]
+\[ Q-W=\Delta U + \Delta\text{KE} + \Delta\text{PE} \]
+\[ \oint \frac{\partial Q }{T} \leq 0 \quad \text{Clausius Inequality}  \]
+\[ dS= \frac{\partial Q}{T} \quad\text{reversible}  \]
+\[ T\; ds=du+P\;d\nu \]
+\[ T\;ds = dh - \nu \;dP \]
+\[ \Delta s = s_2^{\circ} - s_1^{\circ} -R \ln \frac{P_2}{P_1} \]
+\[ \Delta s = c_p \ln \left( \frac{T_2}{T_1} \right) - R \ln \left( \frac{P_2}{P_1} \right) \]
+\[ \Delta s = c_v \ln \left( \frac{T_2}{T_1} \right) + R \ln \left( \frac{\nu_2}{\nu_1} \right) \]
+\[ \Delta s = c_p \ln \left( \frac{T_2}{T_1} \right) \quad\text{incompressible} \]
+\[ W = \frac{P_2 V_2 - P_1 V_1}{1 - n}\quad\text{for}\;n \neq 1  \]
+\[ W = P_1 V_1 \ln \frac{V_2}{V_1}\quad\text{for}\;n = 1  \]
+
+\end{multicols}
+
+\textbf{Ideal Gas Constant}
+\[ R_u = \SI{0.08314}{\bar\meter\cubed\per\kmol\per\kelvin} \]
+\[ R_u = \SI{8.314}{\kilo\joule\per\kmol\per\kelvin} \]
+\[ R_u = \SI{1.986}{\btu\per\lbmol\per\rankine} \]
+\[ R_u = \SI{1545}{\poundForce\feet\per\lbmol\per\rankine} \]
+
+\end{document}
